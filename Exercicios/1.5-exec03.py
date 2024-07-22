@@ -6,7 +6,7 @@ e ao final imprima o valor a ser pago pelo cliente sabendo-se que o preço do li
 Álcool:
 a. até 20 litros, desconto de 3% por litro
 
-b. acima de 20 litros, desconto de 5% por litro
+# b. acima de 20 litros, desconto de 5% por litro
 
 Gasolina:
 a. até 20 litros, desconto de 4% por litro
@@ -20,7 +20,6 @@ def calcular_preco_desconto(preco_por_litro, litros, desconto):
     desconto_total = valor_sem_desconto * desconto
     total_pagar = valor_sem_desconto - desconto_total
     return total_pagar
-
 
 def menu_combustivel():
     print("Combustivel Disponivel")
