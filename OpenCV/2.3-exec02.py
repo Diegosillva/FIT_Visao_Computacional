@@ -10,5 +10,5 @@ import cv2 as cv
 img = cv.imread("imagens/fit.png")
 linha, coluna, canais = img.shape
 img[200:200, 150:150] = [255, 0, 0]
-cv.imshow("FIT Logo", img)
+cv.imshow("Fit Logo", img)
 cv.waitKey(0)
