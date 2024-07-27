@@ -1,5 +1,6 @@
 """2.Escreva um programa que leia valores para dois pixels da imagem e “pinte” a região entre esses dois pixels com a cor verde."""
 
+
 import cv2 as cv
 
 # linha1 = input("Digite uma coordenada: ")
