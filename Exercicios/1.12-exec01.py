@@ -21,7 +21,7 @@ def menu():
     print(
         "1 - Casdastrar novo Produto.\n2 - Custo Financeiro.\n3 - Quantidade de Produtos.\n0 - Sair.\n"
     )
-    
+
 
 estoque = []
 
@@ -53,7 +53,7 @@ def valor_produto(nome_produto):
     global estoque
     for produto in estoque:
         if produto["nome"] == nome_produto:
-            return produto["preco"]
+            return produto["preco"] * produto["quantidade_produto"]
     return print("Produto não encontrado ou não cadastrado")
 
 
@@ -70,8 +70,9 @@ while True:
         print(
             f"O produto encontrado foi {produto_pequisado} e seu valor e de R$ {preco:.2f}"
         )
+
     elif opcao == "3":
         quantidade_produto()
     if opcao == "0":
-        print("Muito obrigado, saindo do programa.")
+        print("\033[31m" + "Muito obrigado, saindo do programa." + "\033[0;0m")
         break
